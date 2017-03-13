@@ -21,6 +21,7 @@ module.exports = {
     minimizeCss:true,
     minifyHtml:true,
     userUglifyJsPlugin:true,
+    fileUseLocalPath:true
   },
   dev: {
     env: "development",
