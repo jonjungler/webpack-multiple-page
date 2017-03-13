@@ -10,7 +10,7 @@ var config = require('./config/config.js')
 require("babel-polyfill");
 var localEnv = process.env.NODE_ENV == 'production' ? 'build' : 'dev'
 var minimizeCss = config[localEnv].minimizeCss
-var filePublicPath = config[localEnv].fileUserLocalPath ? 'file:///'+(path.resolve(__dirname,'./dist/')+'/').replace(/\\/g,'/') : '/'
+var filePublicPath = config[localEnv].fileUseLocalPath ? 'file:///'+(path.resolve(__dirname,'./dist/')+'/').replace(/\\/g,'/') : config[localEnv].publicPath
 
 
 module.exports = {

@@ -6,6 +6,7 @@ module.exports = {
     assetsRoot: path.resolve(__dirname, '../dist'),
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
+    publicPath:'/webpack-multiple-page/index/',
     productionSourceMap: true,
     // Gzip off by default as many popular static hosts such as
     // Surge or Netlify already gzip all static assets for you.
@@ -20,7 +21,6 @@ module.exports = {
     minimizeCss:true,
     minifyHtml:true,
     userUglifyJsPlugin:true,
-    fileUserLocalPath:true
   },
   dev: {
     env: "development",
@@ -29,6 +29,7 @@ module.exports = {
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
     proxyTable: {},
+    publicPath:'/webpack-multiple-page/index/',
     // CSS Sourcemaps off by default because relative paths are "buggy"
     // with this option, according to the CSS-Loader README
     // (https://github.com/webpack/css-loader#sourcemaps)
